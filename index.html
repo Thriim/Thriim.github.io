@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+          "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
+
+    <title>
+      Pierrick Couderc
+    </title>
+  </head>
+  <body>
+    <div class="w3-main w3-col">
+      <div class="w3-quarter"></div>
+      <div class="w3-col w3-container">
+        <div class="w3-content">
+          <div class="w3-container w3-bottombar">
+            <header><div class="w3-row">
+              <div class="w3-left"><img src="pierrick.png" class="w3-border w3-padding"></div>
+              <h1 class="w3-right">Pierrick Couderc</h1>
+              </div>
+            </header>
+            <p>
+              I am a PhD student working
+              between <a href="http:/www.ocamlpro.com">OCamlPro</a>
+              and the <a href="http://u2is.ensta-paristech.fr/groups/SL/index.php?lang=fr">U2IS</a> laboratory at Ensta
+              Paristech. During my thesis, I am working on a typed intermediate language for the
+              OCaml compiler, under the supervision of Michel Mauny (Ensta Paristech) and Gr&eacute;goire
+              Henry (OCamlPro). When I am not hacking (and adding bugs into) the OCaml compiler, I
+              heavily use OCaml for everyday programming.
+            </p>
+          </div>
+          <div class="w3-container w3-bottombar">
+            <h3>Contact</h3>
+            <ul class="w3-ul">
+              <li>At Ensta Paristech:
+                <ul class="w3-ul">
+                  <li> Office: R221</li>
+                  <li> <a href="mailto:pierrick.couderc@ensta-paristech.fr">
+                      pierrick.couderc@ensta-paristech.fr</a> </li>
+              </ul></li>
+              <li>At OCamlPro, based in Jussieu:
+                <ul class="w3-ul">
+                  <li>Office 15-16-102</li>
+                  <li><a href="mailto:pierrick.couderc@ocamlpro.com">
+                      pierrick.couderc@ocamlpro.com</a> </li>
+              </ul></li>
+            </ul>
+            
+          </div>
+          <div class="w3-container w3-bottombar">
+            <h3 class="w3-text-real">Research</h3>
+            <p>
+            During my PhD thesis, I am focusing on type systems and compilation of functional
+            languages, especially how to improve the safety of optimizations of the OCaml
+            compiler. The goal of this work is to propagate the types infered into the backend of
+            the compiler as a typed intermediate language, and at the end verifying that
+            optimizations will not break programs. This might become more important with
+            Flambda, which is a new intermediate language designed for optimizations introduced
+            in 4.03, that comes with huge inlining and constant propagation passes. This might
+            also allow more specialization of programs during inlining. Another property
+            is that it can help to catch regressions of the type checker, or verify future
+            features added to the type system.
+            <br/>
+            More generally, I am interested in programming languages design, type systems and
+            compilation.
+            </p>
+          </div>
+          <div class="w3-container w3-bottombar">
+            <h3>Teaching</h3>
+            <ul class="w3-ul">
+              <li><h5>2015-2016:</h5>
+                <ul class="w3-ul">
+                  <li><a href="http://www.enseignement.polytechnique.fr/informatique/INF441/TD/">
+                      INF441</a> (Programmation Avanc&eacute;e) at &Eacute;cole Polytechnique.</li>
+                  <li>
+                    <a href="http://perso.ensta-paristech.fr/~pessaux/teaching/in102/">
+                      IN102</a> (Cours Syst&egrave;me et Programmation en C) at Ensta Paristech</li>
+                </ul>
+              </li>
+              <li><h5>2014-2015:</h5>
+                <ul class="w3-ul">
+                  <li>
+                    <a href="http://www.enseignement.polytechnique.fr/informatique/INF441/TD/">
+                      INF441</a> (Programmation Avanc&eacute;e) at &Eacute;cole Polytechnique.</li>
+                </ul>
+              </li>
+            </ul>
+            <br/>
+          </div>
+          <div class="w3-container w3-bottombar">
+            <h3>Publications</h3>
+            <ul class="w3-ul">
+              <li><a href="https://ocaml.org/meetings/ocaml/2014/ocaml2014_8.pdf">
+                  A Proposal for Non-Intrusive Namespaces in OCaml</a>
+                by Pierrick Couderc, Fabrice Le Fessant, Benjamin Canou, Pierre Chambart at OCaml'2014.
+              </li>
+            </ul>
+            <br/>
+          </div>
+          <div class="w3-container w3-bottombar">
+            <h3>Software</h3>
+            All of my public programming stuff can be found either on my
+            <a href="https://github.com/OCamlPro-Couderc">professional Github's
+              page</a> or my
+            <a href="https://github.com/pcouderc">personal's one</a>,
+            however the latter contains mainly old programs and stuff
+            from my Master 2 at UPMC.
+            <ul class="w3-ul">
+              <li>
+                <a href="https://github.com/OCamlPro-Couderc/ocaml">Modified OCaml compiler</a>
+                <ul>
+                  <li>OCaml 4.02.3 with namespaces and <emph>functor units</emph>
+                    (branch <a href="https://github.com/OCamlPro-Couderc/ocaml/tree/functor-units">functor-units</a>):
+                    this hack adds two features:
+                    <ul class="w3-ul"><li>a namespace mechanism that allows to distinguish compilation units with
+                        identical names, similar to Scala's packages.</li>
+                      <li>functor units, which allows to have multiple compilation units
+                        that are
+                        parameterized over a given signature. This allows to make libraries into huge
+                        functors, to make functorized namespaces.
+                      </li>
+                    </ul>
+                    A complete description can be found
+                    <a href="https://github.com/OCamlPro-Couderc/namespace_internship">here</a>
+                    (report in french, presentation available in english).
+                  </li>
+                  <li>OCaml 4.02.3 with type information in the Lambda (branch
+                    <a href="https://github.com/OCamlPro-Couderc/ocaml/tree/propagate">propagate</a>
+                    that propagates naively the infered types
+                    (when possible) into the first intermediate language, Lambda.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://github.com/OCamlPro-Couderc/ocp-ppx-namespace">ocp-ppx-namespace</a>:
+                a ppx for selective opens and imports.
+              </li>
+              <li>
+                <a href="https://github.com/OCamlPro-Couderc/ocp-ppx-debug">ocp-ppx-debug</a>:
+                a library that generates ppx to add informations into the program to
+                help debugging. An example of a generated call trace can be found
+                <a href="http://ocamlpro-couderc.github.io/trace.html">here</a>
+                (list items can be clicked).
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w3-quarter"></div>
+    </div>
+  </body>
+</html>
