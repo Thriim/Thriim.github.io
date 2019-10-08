@@ -18,54 +18,56 @@
         <div class="w3-content">
           <div class="w3-container w3-bottombar">
             <header><div class="w3-row">
-              <div class="w3-left"><img src="pierrick.png" class="w3-border w3-padding"></div>
+                <div class="w3-left">
+                  <img src="photo.jpg"
+                       class="w3-border w3-padding"
+                       width="213px"></div>
               <h1 class="w3-right">Pierrick Couderc</h1>
               </div>
             </header>
             <p>
-              I am a PhD student working
-              between <a href="http:/www.ocamlpro.com">OCamlPro</a>
+              I am currently working
+              at <a href="http:/www.ocamlpro.com">OCamlPro</a> as a R&D
+              engineer.
+              <br/>
+              Before that, I prepared and defended my PhD between <a href="http:/www.ocamlpro.com">OCamlPro</a>
               and the <a href="http://u2is.ensta-paristech.fr/groups/SL/index.php?lang=fr">U2IS</a> laboratory at Ensta
               Paristech. During my thesis, I am working on a typed intermediate language for the
-              OCaml compiler, under the supervision of Michel Mauny (Ensta Paristech) and Gr&eacute;goire
-              Henry (OCamlPro). When I am not hacking (and adding bugs into) the OCaml compiler, I
-              heavily use OCaml for everyday programming.
+              OCaml compiler, under the supervision of Michel Mauny (Ensta
+              Paristech) and Fabrice Le Fessant (OCamlPro).
             </p>
           </div>
           <div class="w3-container w3-bottombar">
             <h3>Contact</h3>
             <ul class="w3-ul">
-              <li>At Ensta Paristech:
+              <li>At OCamlPro:
                 <ul class="w3-ul">
-                  <li> Office: R221</li>
-                  <li> <a href="mailto:pierrick.couderc@ensta-paristech.fr">
-                      pierrick.couderc@ensta-paristech.fr</a> </li>
-              </ul></li>
-              <li>At OCamlPro, based in Jussieu:
-                <ul class="w3-ul">
-                  <li>Office 15-16-102</li>
+                  <li>21 rue de Chatillon, 75014 Paris</li>
                   <li><a href="mailto:pierrick.couderc@ocamlpro.com">
                       pierrick.couderc@ocamlpro.com</a> </li>
               </ul></li>
             </ul>
-            
+
           </div>
           <div class="w3-container w3-bottombar">
             <h3 class="w3-text-real">Research</h3>
+            I defended my PhD on 10/23/2018 (<a href="slides.pdf">slides</a> and
+            <a href="these.pdf">manuscript</a>, both in french).
+
             <p>
-            During my PhD thesis, I am focusing on type systems and compilation of functional
-            languages, especially how to improve the safety of optimizations of the OCaml
-            compiler. The goal of this work is to propagate the types infered into the backend of
-            the compiler as a typed intermediate language, and at the end verifying that
-            optimizations will not break programs. This might become more important with
-            Flambda, which is a new intermediate language designed for optimizations introduced
-            in 4.03, that comes with huge inlining and constant propagation passes. This might
-            also allow more specialization of programs during inlining. Another property
-            is that it can help to catch regressions of the type checker, or verify future
-            features added to the type system.
-            <br/>
-            More generally, I am interested in programming languages design, type systems and
-            compilation.
+            During my PhD, I have focused my attention on type systems
+            and compilation of functional languages, especially how to improve
+            the safety of the OCaml compiler. At first, my goal was to propagate
+            types inferred by the front-end into the back-end and use them to
+            drive some optimizations. In the end, I worked on type checking the
+            TypedTree of OCaml, which is its first intermediate language and
+            basically the langage where some constructions have been
+            desugared. The result of this work is a formalized specification of
+            a type system for OCaml and a typechecker implementing these rules
+            to check the TypedTree.
+
+            <br/> More generally, I am interested in programming languages
+            design, type systems and compilation.
             </p>
           </div>
           <div class="w3-container w3-bottombar">
@@ -92,6 +94,13 @@
           </div>
           <div class="w3-container w3-bottombar">
             <h3>Publications</h3>
+            <ul class="w3-ul">
+              <li><a href="https://ocaml.org/meetings/ocaml/2014/ocaml2014_8.pdf">
+                  A Type Checker for Annotated OCaml Abstract Syntax Trees, or An Effective Type System for OCaml</a>
+                by  Pierrick Couderc, Michel Mauny, Grégoire Henry and Fabrice
+                  Le Fessant at TFP'2016 (presentation only).
+              </li>
+            </ul>
             <ul class="w3-ul">
               <li><a href="https://ocaml.org/meetings/ocaml/2014/ocaml2014_8.pdf">
                   A Proposal for Non-Intrusive Namespaces in OCaml</a>
